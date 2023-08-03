@@ -1,0 +1,24 @@
+header {
+    .header__top{
+        .header__topbar {
+            a {
+                margin:0 5px;
+            }   
+        }
+    }
+    nav {
+        ul {
+            li {
+                list-style: none;
+                margin: 10px 20px;
+                font-size: 38px;
+                &.active {
+                    a {
+                        color: $color-primary; 
+                    }
+                    
+                }
+            }
+        }
+    }
+}

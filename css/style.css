@@ -1,2 +1,9 @@
 @charset "UTF-8";
-/* Khai báo các biến dùng chung (color, font, ... )*//*# sourceMappingURL=style.css.map */
+/* Khai báo các biến dùng chung (color, font, ... )*/
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #78AE1A;
+}/*# sourceMappingURL=style.css.map */

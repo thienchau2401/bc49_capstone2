@@ -1,8 +1,8 @@
 /* Khai báo các biến dùng chung (color, font, ... )*/
 // biến về màu
-$color-blue-1 : #2A73DC;
-$color-blue-2 : #1D355E;
-$color-bg : #F6F9FE;
+$color-primary : #78AE1A;
+$color-text : #838383 ;
+$color-title  : black;
 $color-yellow: yellow;
 
 // biến về độ dài chữ
@@ -15,3 +15,12 @@ $fs-title: 60px;
 $fs-sub-title: 20px;
 $fs-section-title: 35px;
 $fs-content: 16px;
+
+//bien mac dinh
+a {
+    text-decoration: none;
+    color: $color-title;
+    &:hover {
+        color: $color-primary;
+    }
+}
