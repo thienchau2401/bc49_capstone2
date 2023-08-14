@@ -16,10 +16,11 @@ let getProductByFeature = () => {
 getProductByFeature();
 let renderProduct = (productData) => {
     let content = '';
+    let delayTime = 0;
     for (product of productData) {
         content += `
         <div class = "col-3 gy-3">
-            <div class="card">
+            <div class="card animate__animated animate__fadeInUpBig"style="animation-delay: ${0.2*delayTime++}s;">
                 <img src="${product.image}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
@@ -35,3 +36,11 @@ let renderProduct = (productData) => {
     }
     document.getElementById('productList').innerHTML = content;
 }
+
+// Header scrolled
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
