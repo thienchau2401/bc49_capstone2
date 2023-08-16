@@ -4,7 +4,7 @@ $color-primary : #78AE1A;
 $color-text : #838383 ;
 $color-title  : black;
 $color-yellow: yellow;
-
+$color-bg-grey: #F8F8F8;
 // biến về độ dài chữ
 $fw-title: bold;
 $fw-sub-title: 600;
@@ -28,4 +28,9 @@ a {
     &:hover {
         color: $color-primary;
     }
+}
+
+:root {
+    
+    --gradient: linear-gradient(299deg, rgba(34,83,195,1) 32%, rgba(51,173,124,1) 48%)!important;
 }

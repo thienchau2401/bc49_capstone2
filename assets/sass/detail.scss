@@ -1,0 +1,17 @@
+//document.querySelector("#itemDetail > div > div > div > div.size__list.d-flex")
+#itemDetail {
+    .container {
+        .detail__content{
+            .item__description {
+                .size__list{
+                    label {
+                        //background-color: yellow;
+                    }
+                }
+                #addToCart{
+                    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+                }
+            }
+        }
+    }
+}

@@ -20,23 +20,27 @@ getItemDetail();
 let renderItemDetail = (item) => {
     // create available size list
     let sizeList = '';
+    let index = 1;
     for (let size of item.size) {
-        sizeList += `<i>${size}</i>
+        sizeList += `
+        <input type="radio" class="btn-check" name="options" id="option${index}" autocomplete="off" checked>
+        <label class="btn btn-info me-2" for="option${index}">${size}</label>
         `;
+        index++;
     }
     //render item detail tab
     let content = `
     <div class="container">
-        <div class="detail__content d-flex">
+        <div class="detail__content d-flex align-items-center">
             <img src="${item.image}" alt="">
-            <div class="item__description">
+            <div class="item__description ms-5">
                 <h2>${item.name}</h2>
                 <p>${item.description}</p>
                 <h5>Available size</h5>
                 <div class="size__list d-flex">
                     ${sizeList}
                 </div>
-                <h4>${item.price}$</h4>
+                <h4 class='text-danger'>${item.price}$</h4>
                 <div class="quantity d-flex">
                     <button class="btn btn-primary" onclick='minusBtn()'>
                         <i class="fa fa-minus"></i>
@@ -46,7 +50,7 @@ let renderItemDetail = (item) => {
                         <i class="fa fa-plus"></i>
                     </button>
                 </div>
-                <button class="btn btn-danger my-3">Add to cart</button>
+                <button class="btn btn-danger my-3" id='addToCart'>Add to cart</button>
             </div>
         </div>  
     </div>
@@ -77,7 +81,7 @@ let renderProduct = (productData) => {
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.shortDescription}</p>
                     <div class = "card-bottom d-flex justify-content-between align-items-center">
-                        <a href="./pages/detail.html?id=${product.id}" class="btn btn-primary">Buy now</a>
+                        <a href="./detail.html?id=${product.id}" class="btn btn-primary">Buy now</a>
                         <p>${product.price}$</p>
                     </div>
                 </div>
