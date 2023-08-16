@@ -1,41 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/index.css">
+  <body>
+    <div class="container">
+      <h1 class="text-center my-3">REGISTER</h1>
+      <form class="mt-4">
+        <div class="row">
+          <div class="col-6 pe-5">
+            <input
+              type="email"
+              class="form-control mb-2"
+              id="email"
+              placeholder="Email"
+            />
+            <span class="sp-thongbao text-danger mb-2" id="tbEmail"></span>
+            <input
+              type="password"
+              class="form-control mb-2"
+              id="password"
+              placeholder="Password"
+            />
+            <span class="sp-thongbao text-danger mb-2" id="tbPassword"></span>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordConfirm"
+              placeholder="Password Confirm"
+            />
+            <span
+              class="sp-thongbao text-danger mb-2"
+              id="tbPasswordConfirm"
+            ></span>
+          </div>
+          <div class="col-6 ps-5">
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="name"
+              placeholder="Name"
+            />
+            <span class="sp-thongbao text-danger mb-2" id="tbName"></span>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="phone"
+              placeholder="Phone"
+            />
+            <span class="sp-thongbao text-danger mb-2" id="tbPhone"></span>
+            <fieldset class="row pt-2">
+              <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+              <div class="col-sm-10">
+                <div class="form-check me-3" style="display: inline-block">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="male"
+                    value="true"
+                  />
+                  <label class="form-check-label" for="gridRadios1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check" style="display: inline-block">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="female"
+                    value="false"
+                  />
+                  <label class="form-check-label" for="gridRadios2">
+                    Female
+                  </label>
+                </div>
+              </div>
+              <span class="sp-thongbao text-danger mb-2" id="tbGender"></span>
+            </fieldset>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6 ps-5">
+            <button
+              type="submit"
+              onclick="SignUp()"
+              class="btn btn-primary mt-3 py-2 px-5"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
 
-</head>
-
-<body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
 
-  <!-- Main script -->
-  <script src="../assets/js/register.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+
+    <!-- Main script -->
+    <script src="./../assets/validation/validation.js"></script>
+    <script src="../assets/js/register.js"></script>
+  </body>
 </html>
