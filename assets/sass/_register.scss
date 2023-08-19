@@ -1,0 +1,29 @@
+.register {
+    padding: 30px 0;
+    h1 {
+        font-weight: $fw-title !important;
+        font-size: $fs-section-title !important;
+    }
+    form {
+        padding: 0 70px;
+        .form-control,legend,.form-check-label {
+            font-weight: $fw-content !important;
+            color: $color-text !important;
+            font-size: $fs-content;
+        }
+        button {
+            font-size: $fs-content;
+            font-weight: $fw-sub-title !important;
+        }
+        .col-sm-10 {
+            @include Responsive(SM) {
+                width: 100%;
+            }
+            .mx-3 {
+                @include Responsive(SM) {
+                    margin-left: 0 !important;
+                } 
+            }
+        }
+    }
+}
