@@ -18,8 +18,11 @@ a:hover {
   --gradient: linear-gradient(299deg, rgba(34,83,195,1) 32%, rgba(51,173,124,1) 48%)!important;
 }
 
-header {
-  border-bottom: 10px solid rgb(240, 242, 245);
+header .navbar.scrolled {
+  background-color: white !important;
+  transition: all 200ms linear;
+  padding: 0 !important;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
 }
 header nav ul li {
   margin: 10px 10px;
@@ -259,8 +262,16 @@ header .navbar .nav-link.active, header .navbar.scrolled .nav-link.active {
   margin-right: 5px;
 }
 
+#itemDetail .container .detail__content .item__description .quantity p {
+  display: inline-block;
+  color: #78AE1A;
+  margin: auto 0;
+}
 #itemDetail .container .detail__content .item__description #addToCart {
   background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+}
+#itemDetail .container .detail__content .btn-check:checked + .btn {
+  border-color: black !important;
 }
 
 .register {

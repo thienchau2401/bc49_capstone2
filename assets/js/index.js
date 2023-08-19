@@ -19,7 +19,7 @@ let renderProduct = (productData) => {
     let delayTime = 0;
     for (product of productData) {
         content += `
-        <div class = "col-3 gy-3">
+        <div class = "col-lg-3 col-md-4 col-sm-6 col-xs-12 gy-3">
             <div class="card animate__animated animate__fadeInUpBig"style="animation-delay: ${0.2*delayTime++}s;">
                 <img src="${product.image}" class="card-img-top" alt="...">
                 <div class="card-body">
