@@ -30,103 +30,126 @@
 
   <body>
     <!-- Header -->
-    <header>
-      <div class="header__top d-flex justify-content-between px-5 mt-3">
-        <img src="./assets/img/logo.png" alt="" class="mx-auto" />
-        <div class="header__topbar d-flex align-items-center">
-          <div class="dropdown">
+    <header class="bg-primary bg-opacity-25">
+      <div class="container">
+        <div class="header__top d-flex justify-content-between px-5 pt-3">
+          <a href="./../index.html">
+            <img src="./../assets/img/logo.png" alt="" class="" />
+          </a>
+          <form class="d-flex w-50" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <button
-              class="btn"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              class="btn btn-outline-success bg-primary bg-opacity-50 text-white"
+              type="submit"
             >
-              <a href="#"
-                ><i class="fa fa-user me-1"></i><span>Account</span></a
-              >
+              Search
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a
-                class="dropdown-item"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                style="cursor: pointer"
+          </form>
+          <div class="header__topbar d-flex align-items-center">
+            <div class="dropdown">
+              <button
+                class="btn"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-                Login
-              </a>
-              <a class="dropdown-item" href="./pages/register.html">Register</a>
-              <a class="dropdown-item" href="#">Logout</a>
-            </div>
-            <!-- Modal -->
-            <!-- Button trigger modal -->
+                <a href="#"
+                  ><i class="fa fa-user me-1 fs-5"></i><span>Account</span></a
+                >
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a
+                  class="dropdown-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  style="cursor: pointer"
+                >
+                  Login
+                </a>
+                <a class="dropdown-item" href="./pages/register.html"
+                  >Register</a
+                >
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+              <!-- Modal -->
+              <!-- Button trigger modal -->
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="ModalFormLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <button
-                      type="button"
-                      class="btn-close btn-close-white"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                    <div class="myform bg-dark">
-                      <h1 class="text-center">Login Form</h1>
-                      <form>
-                        <div class="mb-3 mt-4">
-                          <label for="exampleInputEmail1" class="form-label"
-                            >Email address</label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label"
-                            >Password</label
-                          >
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="exampleInputPassword1"
-                          />
-                        </div>
-                        <button type="submit" class="btn btn-light mt-3">
-                          LOGIN
-                        </button>
-                        <p>
-                          Not a member?
-                          <a href="./pages/register.html">Signup now</a>
-                        </p>
-                      </form>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="ModalFormLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                      <div class="myform bg-dark">
+                        <h1 class="text-center">Login Form</h1>
+                        <form>
+                          <div class="mb-3 mt-4">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Email address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputPassword1"
+                              class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
+                          <button type="submit" class="btn btn-light mt-3">
+                            LOGIN
+                          </button>
+                          <p>
+                            Not a member?
+                            <a href="./pages/register.html">Signup now</a>
+                          </p>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- Modal -->
             </div>
-            <!-- Modal -->
+            <!-- <a href=""><i class="fa fa-user-plus"></i></a> -->
+            <a href="#"
+              ><i class="fa fa-shopping-cart me-1 fs-5"></i><span>Cart</span></a
+            >
           </div>
-          <!-- <a href=""><i class="fa fa-user-plus"></i></a> -->
-          <a href="#"
-            ><i class="fa fa-shopping-cart me-1"></i><span>Cart</span></a
-          >
         </div>
       </div>
+
       <!-- place navbar here -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBar">
-        <div class="container">
+        <div class="container justify-content-center">
           <button
             class="navbar-toggler"
             type="button"
@@ -138,10 +161,18 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./../index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Men</a>
@@ -156,26 +187,14 @@
                 <a class="nav-link" href="#">Sport</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-
     <!-- Register -->
-    <section class="register my-5">
+    <section class="register mb-5">
       <div class="container">
-        <h1 class="text-center my-5">REGISTER</h1>
+        <h1 class="text-center mb-5 mt-3">REGISTER</h1>
         <form class="mt-4">
           <div class="row">
             <div class="col-6 pe-4">

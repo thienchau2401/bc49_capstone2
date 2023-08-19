@@ -18,6 +18,9 @@ a:hover {
   --gradient: linear-gradient(299deg, rgba(34,83,195,1) 32%, rgba(51,173,124,1) 48%)!important;
 }
 
+header {
+  border-bottom: 10px solid rgb(240, 242, 245);
+}
 header nav ul li {
   margin: 10px 10px;
   font-size: 30px;
@@ -37,7 +40,7 @@ header nav ul li a.active {
 }
 
 .navbar.scrolled {
-  background-color: white !important;
+  background-color: #C2DBFE !important;
   padding: 0.5rem 0 0.5rem 0 !important;
   position: fixed;
   z-index: 1000;
