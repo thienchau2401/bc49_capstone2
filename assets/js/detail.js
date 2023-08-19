@@ -31,8 +31,9 @@ let renderItemDetail = (item) => {
     //render item detail tab
     let content = `
     <div class="container">
-        <div class="detail__content d-flex align-items-center">
-            <img src="${item.image}" alt="">
+        <h2 class = 'text-center pt-3'> PRODUCT DETAIL</h2>
+        <div class="detail__content d-flex align-items-center ms-5">
+            <img class = "w-25 img-fluid" src="${item.image}" alt="">
             <div class="item__description ms-5">
                 <h2>${item.name}</h2>
                 <p>${item.description}</p>
@@ -74,7 +75,7 @@ let renderProduct = (productData) => {
     let content = '';
     for (product of productData) {
         content += `
-        <div class = "col-3 gy-3">
+        <div class = "col-lg-3 col-md-4 col-sm-6 col-xs-12 gy-3">
             <div class="card">
                 <img src="${product.image}" class="card-img-top" alt="...">
                 <div class="card-body">

@@ -1,5 +1,5 @@
 header {
-    border-bottom: 10px solid rgba(240, 242, 245, 1);
+    //border-bottom: 10px solid rgba(240, 242, 245, 1);
     .header__top{
         .header__topbar {
             a{
@@ -7,7 +7,14 @@ header {
             }   
         }
     }
+    .navbar.scrolled {
+        background-color: white !important;
+        transition: all 200ms linear;
+        padding:0!important;
+        border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    }
     nav {
+        
         ul {
             li {
                 margin: 10px 10px;
